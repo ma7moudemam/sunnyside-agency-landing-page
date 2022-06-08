@@ -1,0 +1,87 @@
+.stand{
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.image{
+    height: 100%;
+    width: 50%;
+    background-image: url('./../assets/desktop/image-stand-out.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.content{
+    height: 100%;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+.content h1{
+   
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.content p{
+    width: 370px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 480px){
+    .stand{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .image{
+        background-image: url('./../assets/mobile/image-stand-out.jpg');
+        height: 50vh;
+        width: 100%;
+    }
+
+    .content{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content h1{
+        width: 70%;
+        font-size: 2.5rem;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 20px;
+    }
+
+    .content p{
+        width: 90%;
+        font-size: 1.3rem;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        color: #777;
+    }
+
+    .content h3{
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import React , { Fragment, Suspense } from 'react';
 import './App.css';
+import ClientTestmilens from './components/ClientTestmilens';
+import Gallery from './components/Gallery';
+import GraphicDesign from './components/GraphicDesign';
+import Landing from './components/Landing';
+import Photography from './components/Photography';
+import Stand from './components/Stand';
+import Transform from './components/Transform';
+import Footer from './Layout/Footer';
+import classes from './App.module.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Landing/>
+      <Transform/>
+      <Stand/>
+      <div className={classes.photography}>
+      <GraphicDesign/>
+      <Photography/>
+      </div>
+      <ClientTestmilens/>
+      <Gallery/>
+      <Footer/>
+    </Fragment>
   );
 }
 

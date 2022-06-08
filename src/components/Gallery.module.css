@@ -1,0 +1,26 @@
+.gallery{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.gallery img{
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+
+    .gallery{
+        height: 100%;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+    }
+    .gallery img{
+        width: 50%;
+        height: auto;
+    }
+}
+    

@@ -1,0 +1,23 @@
+.testmilens{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    color: gray;
+    text-transform: uppercase;
+    margin-top: 80px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .testmilens{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+
+    }
+}
